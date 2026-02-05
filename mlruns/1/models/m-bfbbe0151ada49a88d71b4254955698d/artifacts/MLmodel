@@ -1,0 +1,23 @@
+artifact_path: /Users/ashutoshbaruah/Documents/dev/Thesis/hsi_classification/mlruns/1/models/m-bfbbe0151ada49a88d71b4254955698d/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.11.7
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.9.1
+mlflow_version: 3.8.1
+model_id: m-bfbbe0151ada49a88d71b4254955698d
+model_size_bytes: 981814
+model_uuid: m-bfbbe0151ada49a88d71b4254955698d
+prompts: null
+run_id: 0d7054583d39435d8bccbc114f819a72
+utc_time_created: '2026-01-21 16:22:26.637813'
