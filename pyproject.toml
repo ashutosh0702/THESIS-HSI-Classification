@@ -1,0 +1,25 @@
+[project]
+name = "thesis-hsi-classification"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.3.1",
+    "h5py>=3.15.1",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "pandas>=2.3.3",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "python-dotenv>=1.2.1",
+    "rasterio>=1.4.4",
+    "scikit-learn>=1.8.0",
+    "scipy>=1.17.1",
+    "seaborn>=0.13.2",
+    "spectral>=0.24",
+    "streamlit>=1.54.0",
+    "tifffile>=2026.2.20",
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
+]
