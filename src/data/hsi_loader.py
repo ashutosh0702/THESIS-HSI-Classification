@@ -86,6 +86,7 @@ def load_mat_file(filepath: Union[str, Path],
         raise ImportError("scipy is required for .mat file loading")
     
     filepath = Path(filepath)
+    print(f"Filepath : {filepath}")
     if not filepath.exists():
         raise FileNotFoundError(f"File not found: {filepath}")
     
@@ -313,6 +314,7 @@ def load_benchmark_dataset(name: str, data_dir: Union[str, Path]) -> HSICube:
     
     # Load data
     data_path = data_dir / info['data_file']
+    print(data_path)
     cube = load_mat_file(data_path, data_key=info['data_key'])
     
     # Load ground truth
