@@ -161,7 +161,7 @@ def main():
                 
                 if st.button("Load Experiments"):
                     try:
-                        mlflow.set_tracking_uri("mlruns")
+                        mlflow.set_tracking_uri("sqlite:///mlflow.db")
                         experiment = mlflow.get_experiment_by_name(experiment_name)
                         if experiment:
                             runs = mlflow.search_runs(experiment_ids=[experiment.experiment_id])
@@ -176,6 +176,7 @@ def main():
                     runs = st.session_state['mlflow_runs']
                     run_names = runs['tags.mlflow.runName'].fillna(runs['run_id']).tolist()
                     selected_run = st.selectbox("Select Run", run_names)
+                    print(selected_run)
             else:
                 st.warning("MLflow not installed")
         
